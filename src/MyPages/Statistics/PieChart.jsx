@@ -1,4 +1,5 @@
 import { PieChart, Pie, Cell, ResponsiveContainer, Legend } from 'recharts';
+import PropTypes from 'prop-types';
 const PieChartStyle = ({donation ,totalDonation}) => {
 
     const data = [
@@ -31,7 +32,7 @@ const PieChartStyle = ({donation ,totalDonation}) => {
         dominantBaseline="central"
         fontSize='25px'
       >
-        {`${(percent * 100).toFixed(0)}%`}
+        {`${(percent * 100).toFixed(1)}%`}
       </text>
     );
   };
@@ -58,7 +59,10 @@ const PieChartStyle = ({donation ,totalDonation}) => {
     </ResponsiveContainer>
   );
 };
-
+PieChartStyle.propTypes = {
+  donation: PropTypes.number,
+  totalDonation: PropTypes.number
+}
 export default PieChartStyle;
 
 

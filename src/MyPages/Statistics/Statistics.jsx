@@ -6,14 +6,14 @@ import { getData } from "../../LocalStorage/localStorage";
 const Statistics = () => {
     const [donation,setDonation] = useState(0)
     const [totalDonation,setTotalDonation] = useState(0)
-   const aData = useLoaderData()
+   const fetchData = useLoaderData()
 
     useEffect(()=>{
-        const getDaontionId = getData();
-        setDonation(getDaontionId.length);
-        const toTallDonation = aData.length - getDaontionId.length;
-        setTotalDonation(toTallDonation)
-    },[aData])
+        const getDonationId = getData();
+        setDonation(getDonationId.length);
+        const allDonation = fetchData.length - getDonationId.length;
+        setTotalDonation(allDonation)
+    },[fetchData])
 
    
 

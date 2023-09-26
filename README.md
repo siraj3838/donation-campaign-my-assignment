@@ -1,8 +1,7 @@
-# React + Vite
+Question: Add at least 3 Project features,
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+1/Answer: Education is very important. If you donate on our site we will forward the donation to them for their education
 
-Currently, two official plugins are available:
+2/Answer: Good health is needed. Many people in the world cannot afford treatment due to financial problems. Our site works for those who currently need help.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+3/Answer: We don't waste any more food. Because currently many countries are in food crisis. Our site is working for those who currently need a lot of food.

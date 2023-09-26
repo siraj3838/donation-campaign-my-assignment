@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import { ToastContainer, toast } from 'react-toastify';
   import 'react-toastify/dist/ReactToastify.css';
 import { setData } from "../../../LocalStorage/localStorage";
+import PropTypes from 'prop-types';
 
 const DetailsCard = ({ perCard }) => {
     const { id, picture, title, button_bg_color, description, price } = perCard;
@@ -31,4 +32,7 @@ const DetailsCard = ({ perCard }) => {
     );
 };
 
+DetailsCard.propTypes ={
+    perCard: PropTypes.object
+}
 export default DetailsCard;

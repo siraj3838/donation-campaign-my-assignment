@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-
+import PropTypes from 'prop-types';
 
 const HomePageCard = ({ singleData }) => {
     const { id, picture, title, category, card_bg_color, text_color, } = singleData;
@@ -20,5 +20,7 @@ const HomePageCard = ({ singleData }) => {
         </Link>
     );
 };
-
+HomePageCard.propTypes ={
+    singleData: PropTypes.object
+}
 export default HomePageCard;

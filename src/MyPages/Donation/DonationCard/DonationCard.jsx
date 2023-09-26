@@ -1,6 +1,6 @@
-
+import PropTypes from 'prop-types';
 const DonationCard = ({ donation }) => {
-    const { id, picture, title, category, card_bg_color, text_color, button_bg_color, price } = donation;
+    const { picture, title, category, card_bg_color, text_color, button_bg_color, price } = donation;
     return (
         <div style={{ backgroundColor: card_bg_color }} className="flex lg:gap-6 items-center rounded-lg h-[200px] md:h-[180px] lg:[200px]">
             <div className="w-[220px] md:h-[180px] lg:[200px]">
@@ -18,5 +18,7 @@ const DonationCard = ({ donation }) => {
         </div>
     );
 };
-
+DonationCard.propTypes = {
+    donation: PropTypes.object
+}
 export default DonationCard;
