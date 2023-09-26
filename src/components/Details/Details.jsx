@@ -10,7 +10,6 @@ const Details = () => {
     const detailsApi = useLoaderData();
     useEffect(()=>{
         const isHaven = detailsApi.find(details => details.id == id)
-        console.log(detailsApi)
         setPerCard(isHaven)
         
     },[detailsApi, id])

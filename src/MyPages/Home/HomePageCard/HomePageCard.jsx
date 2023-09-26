@@ -6,9 +6,9 @@ const HomePageCard = ({ singleData }) => {
 
     return (
         <Link to={`/details/${id}`}>
-            <div style={{ backgroundColor: card_bg_color }} className="rounded-md">
+            <div style={{ backgroundColor: card_bg_color }} className="rounded-md mx-10 md:mx-0">
                 <div className="rounded-md">
-                    <img src={picture} alt="" />
+                    <img className="w-full" src={picture} alt="" />
                 </div>
                 <div className="pl-4 py-4">
                     <div className="w-24 flex justify-center">

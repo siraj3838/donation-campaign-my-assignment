@@ -1,0 +1,8 @@
+.error-container{
+    background-image: url('https://i.ibb.co/HBk4yR6/404-page-cover.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 100%;
+    height: 100vh;
+    width: 100%;
+}

@@ -3,8 +3,9 @@ import Layout from "../Layout/Layout";
 import ErrrorPage from "../MyPages/ErrorPage/ErrrorPage";
 import Home from "../MyPages/Home/Home";
 import Donation from "../MyPages/Donation/Donation";
-import Statistics from "../MyPages/Statistics/Statistics";
+
 import Details from "../components/Details/Details";
+import Statistics from "../MyPages/Statistics/Statistics";
 
 const MyRouter = createBrowserRouter([
     {
@@ -24,7 +25,8 @@ const MyRouter = createBrowserRouter([
             },
             {
                 path: '/statistics',
-                element: <Statistics></Statistics>
+                element: <Statistics></Statistics>,
+                loader: ()=> fetch('/donation.json')
             },
             {
                 path: '/details/:id',
