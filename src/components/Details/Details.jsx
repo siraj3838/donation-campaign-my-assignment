@@ -1,8 +1,7 @@
 import { useEffect, useState } from "react";
 import { useLoaderData, useParams } from "react-router-dom";
 import DetailsCard from "./DetailsCard/DetailsCard";
-import { ToastContainer, toast } from 'react-toastify';
-  import 'react-toastify/dist/ReactToastify.css';
+
 
 const Details = () => {
     const [perCard, setPerCard] = useState({})

@@ -3,7 +3,6 @@ import { useEffect, useState } from "react";
 import { useLoaderData } from "react-router-dom";
 import { getData } from "../../LocalStorage/localStorage";
 import DonationCard from "./DonationCard/DonationCard";
-import Statistics from "../Statistics/Statistics";
 
 
 const Donation = () => {

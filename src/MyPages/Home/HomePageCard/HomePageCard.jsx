@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 
 const HomePageCard = ({ singleData }) => {
-    const { id, picture, title, category, category_bg_color, card_bg_color, text_color, button_bg_color, description, price } = singleData;
+    const { id, picture, title, category, card_bg_color, text_color, } = singleData;
 
     return (
         <Link to={`/details/${id}`}>
