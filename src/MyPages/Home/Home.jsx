@@ -30,7 +30,6 @@ const Home = () => {
                 </div>
             </div>
         </div>
-            {/* <Banner searchBtnHandle={searchBtnHandle}></Banner> */}
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-screen-xl mx-auto mt-24 mb-40">
                 {
                     data?.map(singleData => <HomePageCard key={singleData.id} singleData={singleData}></HomePageCard>)
